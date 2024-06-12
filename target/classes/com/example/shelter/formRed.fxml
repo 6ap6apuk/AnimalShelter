@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shelter.FormRedController">
+    <top>
+        <Pane fx:id="paneTop" prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="imgBoxClose" fitHeight="30.0" fitWidth="35.0" layoutX="751.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="imgBoxUnshow" fitHeight="30.0" fitWidth="25.0" layoutX="721.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+               <Text layoutX="200.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: normal; -fx-font-style: normal; -fx-text-alignment: center;" text="ЭЛЕКТРОННЫЙ ПРИЮТ" wrappingWidth="400">
+                  <font>
+                     <Font name="Century Gothic Bold" size="24.0" />
+                  </font>
+               </Text>
+            </children></Pane>
+    </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #63ACB9;" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="489.0" layoutX="48.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="705.0" />
+            <Label layoutX="186.0" layoutY="46.0" text="Выберите животное для редактирования">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="101.0" layoutY="90.0" prefHeight="36.0" prefWidth="146.0" text="Кличка">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font></Label>
+            <Label layoutX="101.0" layoutY="123.0" prefHeight="36.0" prefWidth="146.0" text="Пол">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font></Label>
+            <Label layoutX="345.0" layoutY="123.0" prefHeight="36.0" prefWidth="146.0" style="-fx-text-alignment: center;" text="✓ - самец" textAlignment="CENTER">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font></Label>
+            <Label layoutX="101.0" layoutY="168.0" prefHeight="18.0" prefWidth="127.0" text="Возраст">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font></Label>
+            <Label layoutX="101.0" layoutY="205.0" text="Семейство">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font></Label>
+            <Label layoutX="101.0" layoutY="243.0" text="Порода">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font></Label>
+            <Label layoutX="101.0" layoutY="281.0" text="Окрас">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font></Label>
+            <Label layoutX="100.0" layoutY="324.0" text="Годовая прививка">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font></Label>
+            <Label layoutX="99.0" layoutY="418.0" text="Изображение">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font></Label>
+            <Label layoutX="560.0" layoutY="322.0" text="Болезнь">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="367.0" text="Описание">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="363.0" layoutY="470.0" text="Id">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblError" alignment="CENTER" layoutX="170.0" layoutY="424.0" prefHeight="18.0" prefWidth="472.0" text="lblError">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtName" layoutX="280.0" layoutY="94.0" prefHeight="25.0" prefWidth="435.0" style="-fx-font-family: Verdana; -fx-font-size: 14px; -fx-background-radius: 10px; -fx-background-color: #C3F5FF;" />
+            <TextField fx:id="txtAge" layoutX="280.0" layoutY="164.0" prefHeight="25.0" prefWidth="435.0" style="-fx-font-family: Verdana; -fx-font-size: 14px; -fx-background-radius: 10px; -fx-background-color: #C3F5FF;" />
+            <TextField fx:id="txtBreed" layoutX="280.0" layoutY="241.0" prefHeight="25.0" prefWidth="435.0" style="-fx-font-family: Verdana; -fx-font-size: 14px; -fx-background-radius: 10px; -fx-background-color: #C3F5FF;" />
+            <TextField fx:id="txtColor" layoutX="280.0" layoutY="279.0" prefHeight="25.0" prefWidth="435.0" style="-fx-font-family: Verdana; -fx-font-size: 14px; -fx-background-radius: 10px; -fx-background-color: #C3F5FF;" />
+            <TextField fx:id="txtId" layoutX="389.0" layoutY="465.0" prefHeight="25.0" prefWidth="50.0" style="-fx-font-family: Verdana; -fx-font-size: 14px; -fx-background-radius: 10px; -fx-background-color: #C3F5FF;" />
+            <CheckBox fx:id="chbVaccinated" layoutX="287.0" layoutY="324.0" mnemonicParsing="false" style="-fx-background-color: #C3F5FF;" />
+            <CheckBox fx:id="chbGender" layoutX="284.0" layoutY="134.0" mnemonicParsing="false" style="-fx-background-color: #C3F5FF;" />
+            <CheckBox fx:id="chbIllness" layoutX="682.0" layoutY="322.0" mnemonicParsing="false" style="-fx-background-color: #C3F5FF;" />
+            <ComboBox fx:id="cmbFamily" layoutX="280.0" layoutY="202.0" prefHeight="25.0" prefWidth="240.0" promptText="Выберите семейство" style="-fx-font-family: Verdana; -fx-font-size: 14px; -fx-background-radius: 10px; -fx-background-color: #C3F5FF;" />
+            <Button fx:id="btnSave" layoutX="105.0" layoutY="461.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-text-alignment: center; -fx-background-radius: 33px; -fx-background-color: #C3F5FF;" text="Сохранить">
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnLeft" layoutX="297.0" layoutY="461.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="50.0" style="-fx-text-alignment: center; -fx-background-radius: 33px; -fx-background-color: #C3F5FF;" text="←">
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnRight" layoutX="458.0" layoutY="461.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="50.0" style="-fx-text-alignment: center; -fx-background-radius: 33px; -fx-background-color: #C3F5FF;" text="→">
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCancel" layoutX="548.0" layoutY="461.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-text-alignment: center; -fx-background-radius: 33px; -fx-background-color: #C3F5FF;" text="Отмена">
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnPicture" layoutX="281.0" layoutY="410.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="221.0" style="-fx-text-alignment: center; -fx-background-radius: 33px; -fx-background-color: #C3F5FF;" text="Выбрать изображение">
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="txtDesc" layoutX="281.0" layoutY="353.0" prefHeight="42.0" prefWidth="435.0">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </TextArea>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

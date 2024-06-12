@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="768.0" minWidth="1024.0" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shelter.FormGuestController">
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #63ACB9;" BorderPane.alignment="CENTER">
+         <center>
+            <BorderPane prefHeight="576.0" prefWidth="819.0" BorderPane.alignment="CENTER">
+               <center>
+                  <ScrollPane prefHeight="448.0" prefWidth="500.0" style="-fx-background-color: #B9E1E8;" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="50.0" left="50.0" />
+                     </BorderPane.margin>
+                     <content>
+                        <TilePane fx:id="tilePane" prefHeight="555.0" prefWidth="659.0" style="-fx-background-color: #B9E1E8;" />
+                     </content>
+                  </ScrollPane>
+               </center>
+               <top>
+                  <Pane prefHeight="61.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <BorderPane.margin>
+                        <Insets left="50.0" right="50.0" top="50.0" />
+                     </BorderPane.margin>
+                     <children>
+                        <Label fx:id="lblCount" layoutX="29.0" layoutY="22.0" prefHeight="18.0" prefWidth="278.0" text="Label">
+                           <font>
+                              <Font name="Verdana Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtSearchAnimal" layoutX="687.0" layoutY="14.0" prefHeight="35.0" prefWidth="211.0" style="-fx-background-radius: 10px; -fx-background-color: #C3F5FF;" />
+                        <Label fx:id="lblSort" layoutX="527.0" layoutY="22.0" prefHeight="18.0" prefWidth="158.0" text="Поиск животного:">
+                           <font>
+                              <Font name="Verdana Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </top>
+               <right>
+                  <Pane prefHeight="557.0" prefWidth="262.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="50.0" right="50.0" />
+                     </BorderPane.margin>
+                     <children>
+                        <Button fx:id="btnSugAnimal" layoutX="18.0" layoutY="46.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="230.0" style="-fx-text-alignment: center; -fx-background-radius: 33px; -fx-background-color: #C3F5FF;" text="Предложить животное">
+                           <font>
+                              <Font name="Verdana Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnTakeAnimal" layoutX="18.0" layoutY="106.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="230.0" style="-fx-background-radius: 33px; -fx-background-color: #C3F5FF;" text="Забрать животное">
+                           <font>
+                              <Font name="Verdana Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnCharity" layoutX="18.0" layoutY="166.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="230.0" style="-fx-background-radius: 33px; -fx-background-color: #C3F5FF;" text="Сделать пожертвование">
+                           <font>
+                              <Font name="Verdana Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="lblError" alignment="CENTER" layoutX="26.0" layoutY="452.0" prefHeight="18.0" prefWidth="214.0" text="lblError">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </right>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </center>
+   <top>
+      <Pane fx:id="paneTop" prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="312.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: normal; -fx-font-style: normal; -fx-text-alignment: center;" text="ЭЛЕКТРОННЫЙ ПРИЮТ" wrappingWidth="400">
+               <font>
+                  <Font name="Century Gothic Bold" size="24.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="imgBoxClose" fitHeight="30.0" fitWidth="35.0" layoutX="980.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imgBoxUnshow" fitHeight="30.0" fitWidth="25.0" layoutX="950.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imgBoxBack" fitHeight="30.0" fitWidth="25.0" layoutX="919.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+         </children></Pane>
+   </top>
+</BorderPane>

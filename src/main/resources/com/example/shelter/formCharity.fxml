@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="360.0" maxWidth="800.0" minHeight="360.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shelter.FormCharityController">
+    <top>
+        <Pane fx:id="paneTop" prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="imgBoxClose" fitHeight="30.0" fitWidth="35.0" layoutX="751.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="imgBoxUnshow" fitHeight="30.0" fitWidth="25.0" layoutX="721.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                <Text layoutX="200.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: normal; -fx-font-style: normal; -fx-text-alignment: center;" text="ЭЛЕКТРОННЫЙ ПРИЮТ" wrappingWidth="400">
+                    <font>
+                        <Font name="Century Gothic Bold" size="24.0" />
+                    </font>
+                </Text>
+            </children></Pane>
+    </top>
+   <center>
+      <Pane prefHeight="535.0" prefWidth="800.0" style="-fx-background-color: #63ACB9;" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="240.0" layoutX="48.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="705.0" />
+            <Label layoutX="240.0" layoutY="61.0" text="Введите сумму пожертвования">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnSend" layoutX="98.0" layoutY="204.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="180.0" style="-fx-text-alignment: center; -fx-background-radius: 33px; -fx-background-color: #C3F5FF;" text="Отправить">
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCancel" layoutX="533.0" layoutY="204.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="180.0" style="-fx-text-alignment: center; -fx-background-radius: 33px; -fx-background-color: #C3F5FF;" text="Отмена">
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="lblError" alignment="CENTER" layoutX="233.0" layoutY="178.0" prefHeight="18.0" prefWidth="320.0" text="lblError">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+             <TextField fx:id="txtCharity" alignment="CENTER" layoutX="183.0" layoutY="108.0" prefHeight="45.0" prefWidth="435.0" style="-fx-font-family: Verdana; -fx-font-size: 24px; -fx-background-radius: 10px; -fx-background-color: #C3F5FF;" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shelter.FormLoginController">
+    <top>
+        <Pane fx:id="paneTop" prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="imgBoxClose" fitHeight="30.0" fitWidth="35.0" layoutX="751.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="imgBoxUnshow" fitHeight="30.0" fitWidth="25.0" layoutX="721.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                <Text layoutX="200.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: normal; -fx-font-style: normal; -fx-text-alignment: center;" text="ЭЛЕКТРОННЫЙ ПРИЮТ" wrappingWidth="400">
+                    <font>
+                        <Font name="Century Gothic Bold" size="24.0" />
+                    </font>
+                </Text>
+            </children></Pane>
+    </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #63ACB9;" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="489.0" layoutX="48.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="705.0" />
+            <Label layoutX="107.0" layoutY="219.0" prefHeight="36.0" prefWidth="146.0" style="-fx-alignment: center;" text="Логин">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="107.0" layoutY="260.0" prefHeight="36.0" prefWidth="146.0" style="-fx-alignment: center;" text="Пароль">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+             <Label layoutX="76.0" layoutY="450.0" prefHeight="36.0" prefWidth="650.0" style="-fx-alignment: center; -fx-background-color: #C3F5FF; -fx-background-radius: 10px;" text="Местонахождение приюта по адресу: г. Ростов-на-Дону, 5-й Путеводный переулок">
+                 <font>
+                     <Font name="Verdana" size="14.0" />
+                 </font>
+             </Label>
+            <Label alignment="CENTER" layoutX="91.0" layoutY="68.0" prefHeight="104.0" prefWidth="619.0" style="-fx-alignment: center; -fx-text-alignment: center; -fx-background-color: #C3F5FF; -fx-background-radius: 10px;" text="Вас приветствует программа для автоматизации&#10;управленческой деятельности приюта.&#10;Для начала работы - войдите используя пароль.">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblError" layoutX="77.0" layoutY="404.0" prefHeight="33.0" prefWidth="650.0" style="-fx-alignment: center; -fx-text-alignment: center;" text="lblError" textFill="RED">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtLogin" layoutX="260.0" layoutY="225.0" prefHeight="25.0" prefWidth="435.0" style="-fx-font-family: Verdana; -fx-font-size: 14px; -fx-background-radius: 10px; -fx-background-color: #C3F5FF;" />
+            <PasswordField fx:id="txtPass" layoutX="260.0" layoutY="263.0" prefHeight="25.0" prefWidth="435.0" style="-fx-font-family: Verdana; -fx-font-size: 14px; -fx-background-radius: 10px; -fx-background-color: #C3F5FF;" />
+            <Button fx:id="btnLogin" layoutX="159.0" layoutY="338.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-text-alignment: center; -fx-background-radius: 33px; -fx-background-color: #C3F5FF;" text="Войти">
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCancel" layoutX="478.0" layoutY="338.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-text-alignment: center; -fx-background-radius: 33px; -fx-background-color: #C3F5FF;" text="Отмена">
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Button>
+         </children></Pane>
+   </center>
+</BorderPane>

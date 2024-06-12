@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shelter.FormInnerSummaryController">
+    <top>
+        <Pane fx:id="paneTop" prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="imgBoxClose" fitHeight="30.0" fitWidth="35.0" layoutX="751.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="imgBoxUnshow" fitHeight="30.0" fitWidth="25.0" layoutX="721.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+               <Text layoutX="200.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: normal; -fx-font-style: normal; -fx-text-alignment: center;" text="ЭЛЕКТРОННЫЙ ПРИЮТ" wrappingWidth="400">
+                  <font>
+                     <Font name="Century Gothic Bold" size="24.0" />
+                  </font>
+               </Text>
+            </children></Pane>
+    </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #63ACB9;" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="489.0" layoutX="48.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="705.0" />
+            <Label layoutX="292.0" layoutY="48.0" text="Статистика приюта">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="102.0" layoutY="85.0" prefHeight="36.0" prefWidth="247.0" text="Общее количество животных:">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font></Label>
+            <Label layoutX="102.0" layoutY="118.0" prefHeight="36.0" prefWidth="251.0" text="Количество здоровых животных:">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font></Label>
+            <Label layoutX="102.0" layoutY="163.0" prefHeight="18.0" prefWidth="252.0" text="Количество привитых животных:">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font></Label>
+            <Label layoutX="102.0" layoutY="200.0" text="Больше всего животных семейства:">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font></Label>
+            <Label layoutX="102.0" layoutY="238.0" text="Денежные затраты на питание:">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font></Label>
+            <Label layoutX="102.0" layoutY="276.0" text="Денежные затраты на медикаменты:">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font></Label>
+            <Label layoutX="102.0" layoutY="316.0" text="Пожертвования, поступившие в приют:">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="102.0" layoutY="362.0" text="Животные, принятые в приют:">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font></Label>
+            <Label layoutX="102.0" layoutY="419.0" text="Животные, которые нашли свой дом:">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblError" alignment="CENTER" layoutX="161.0" layoutY="480.0" prefHeight="18.0" prefWidth="226.0" text="lblError">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCountAll" layoutX="435.0" layoutY="85.0" prefHeight="28.0" prefWidth="280.0" style="-fx-font-family: Verdana; -fx-font-size: 14px; -fx-background-radius: 10px; -fx-background-color: #C3F5FF;" />
+            <TextField fx:id="txtCountNotIll" layoutX="435.0" layoutY="121.0" prefHeight="28.0" prefWidth="280.0" style="-fx-font-family: Verdana; -fx-font-size: 14px; -fx-background-radius: 10px; -fx-background-color: #C3F5FF;" />
+            <TextField fx:id="txtCountVaccinated" layoutX="435.0" layoutY="159.0" prefHeight="28.0" prefWidth="280.0" style="-fx-font-family: Verdana; -fx-font-size: 14px; -fx-background-radius: 10px; -fx-background-color: #C3F5FF;" />
+            <TextField fx:id="txtCountKind" layoutX="435.0" layoutY="196.0" prefHeight="28.0" prefWidth="280.0" style="-fx-font-family: Verdana; -fx-font-size: 14px; -fx-background-radius: 10px; -fx-background-color: #C3F5FF;" />
+            <TextField fx:id="txtCountPrice" layoutX="435.0" layoutY="233.0" prefHeight="28.0" prefWidth="280.0" style="-fx-font-family: Verdana; -fx-font-size: 14px; -fx-background-radius: 10px; -fx-background-color: #C3F5FF;" />
+            <TextField fx:id="txtCountMedicine" layoutX="435.0" layoutY="271.0" prefHeight="28.0" prefWidth="280.0" style="-fx-font-family: Verdana; -fx-font-size: 14px; -fx-background-radius: 10px; -fx-background-color: #C3F5FF;" />
+            <TextField fx:id="txtCountCharity" layoutX="435.0" layoutY="310.0" prefHeight="28.0" prefWidth="280.0" style="-fx-font-family: Verdana; -fx-font-size: 14px; -fx-background-radius: 10px; -fx-background-color: #C3F5FF;" />
+            <Button fx:id="btnCancel" layoutX="548.0" layoutY="470.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-text-alignment: center; -fx-background-radius: 33px; -fx-background-color: #C3F5FF;" text="Отмена">
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="txtCountGiven" layoutX="438.0" layoutY="348.0" prefHeight="45.0" prefWidth="278.0">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </TextArea>
+            <TextArea fx:id="txtCountHome" layoutX="438.0" layoutY="405.0" prefHeight="45.0" prefWidth="277.0">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </TextArea>
+         </children></Pane>
+   </center>
+</BorderPane>
